@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="Be Strongger!" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>2024牛客寒假算法基础集训营1 |  一人ぼっち</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="一人ぼっち" type="application/atom+xml">
+<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-2024牛客寒假算法基础集训营1"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  2024牛客寒假算法基础集训营1
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/02/03/2024%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A51/" class="article-date">
+  <time datetime="2024-02-03T14:17:00.000Z" itemprop="datePublished">2024-02-03</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Nowcoder/">Nowcoder</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">3.6k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">17 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi mathvariant="normal">.</mi><mi>D</mi><mi>F</mi><mi>S</mi><mtext>搜索</mtext></mrow><annotation encoding="application/x-tex">A.DFS搜索</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord cjk_fallback">搜</span><span class="mord cjk_fallback">索</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>双指针即可</mtext></mrow><annotation encoding="application/x-tex">双指针即可</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">双</span><span class="mord cjk_fallback">指</span><span class="mord cjk_fallback">针</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">可</span></span></span></span></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">def solve():</span><br><span class="line">    <span class="attribute">n</span>=int(input())</span><br><span class="line">    <span class="attribute">s</span>=input();t=&#x27;DFS&#x27;</span><br><span class="line">    <span class="attribute">j</span>=0</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">if</span> s[i]==t[j]:</span><br><span class="line">            j+=1</span><br><span class="line">            <span class="keyword">if</span> <span class="attribute">j</span>==3:</span><br><span class="line">                <span class="built_in">print</span>(1,<span class="attribute">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">                break</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(0,<span class="attribute">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">    <span class="attribute">t</span>=<span class="string">&#x27;dfs&#x27;</span></span><br><span class="line">    <span class="attribute">j</span>=0</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">if</span> s[i]==t[j]:</span><br><span class="line">            j+=1</span><br><span class="line">            <span class="keyword">if</span> <span class="attribute">j</span>==3:</span><br><span class="line">                <span class="built_in">print</span>(1)</span><br><span class="line">                break</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(0)</span><br><span class="line">    return</span><br><span class="line"></span><br><span class="line"><span class="attribute">test</span>=1</span><br><span class="line"><span class="attribute">test</span>=int(input())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(test):</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi mathvariant="normal">.</mi><mtext>关鸡</mtext></mrow><annotation encoding="application/x-tex">B.关鸡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord">.</span><span class="mord cjk_fallback">关</span><span class="mord cjk_fallback">鸡</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>分类讨论被左边、右边、零点封住的情况。（代码写的一坨，过了就行）</mtext></mrow><annotation encoding="application/x-tex">分类讨论被左边、右边、零点封住的情况。（代码写的一坨，过了就行）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">分</span><span class="mord cjk_fallback">类</span><span class="mord cjk_fallback">讨</span><span class="mord cjk_fallback">论</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">左</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">、</span><span class="mord cjk_fallback">右</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">、</span><span class="mord cjk_fallback">零</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">封</span><span class="mord cjk_fallback">住</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">情</span><span class="mord cjk_fallback">况</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">（</span><span class="mord cjk_fallback">代</span><span class="mord cjk_fallback">码</span><span class="mord cjk_fallback">写</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">坨</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">过</span><span class="mord cjk_fallback">了</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">行</span><span class="mord cjk_fallback">）</span></span></span></span></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">def solve():</span><br><span class="line">    <span class="attribute">n</span>=int(input())</span><br><span class="line">    p=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        r,<span class="attribute">c</span>=map(int,input().split())</span><br><span class="line">        p.append([r,c])</span><br><span class="line">    p.sort(<span class="attribute">key</span>=lambda x:x[1])</span><br><span class="line">    <span class="attribute">fl</span>=fr=fld=frd=False</span><br><span class="line">    <span class="attribute">fz</span>=fzl=fzr=False</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">if</span> p[i][1]&lt;0:</span><br><span class="line">            <span class="attribute">fl</span>=<span class="literal">True</span></span><br><span class="line">            <span class="keyword">if</span> p[i]==[1,-1]:</span><br><span class="line">                <span class="attribute">fzl</span>=<span class="literal">True</span></span><br><span class="line">            <span class="keyword">if</span> i+1&lt;n <span class="keyword">and</span> p[i+1][1]-p[i][1]&lt;=1 <span class="keyword">and</span> p[i+1][0]!=p[i][0]:</span><br><span class="line">                <span class="attribute">fld</span>=<span class="literal">True</span></span><br><span class="line">        elif p[i][1]&gt;0:</span><br><span class="line">            <span class="attribute">fr</span>=<span class="literal">True</span></span><br><span class="line">            <span class="keyword">if</span> p[i]==[1,1]:</span><br><span class="line">                <span class="attribute">fzr</span>=<span class="literal">True</span></span><br><span class="line">            <span class="keyword">if</span> i <span class="keyword">and</span> p[i][1]-p[i-1][1]&lt;=1 <span class="keyword">and</span> p[i][0]!=p[i-1][0]:</span><br><span class="line">                <span class="attribute">frd</span>=<span class="literal">True</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="attribute">fz</span>=<span class="literal">True</span></span><br><span class="line">    <span class="keyword">if</span> fld <span class="keyword">and</span> frd:</span><br><span class="line">        <span class="built_in">print</span>(0)</span><br><span class="line">    elif fld:</span><br><span class="line">        <span class="keyword">if</span> fr <span class="keyword">or</span> fz:</span><br><span class="line">            <span class="built_in">print</span>(1)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(2)</span><br><span class="line">    elif frd:</span><br><span class="line">        <span class="keyword">if</span> fl <span class="keyword">or</span> fz:</span><br><span class="line">            <span class="built_in">print</span>(1)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(2)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> fz:</span><br><span class="line">            <span class="built_in">print</span>(2)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> fzl <span class="keyword">and</span> fzr:</span><br><span class="line">                <span class="built_in">print</span>(1)</span><br><span class="line">            elif fzl <span class="keyword">or</span> fzr:</span><br><span class="line">                <span class="built_in">print</span>(2)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> fl <span class="keyword">and</span> fr:</span><br><span class="line">                    <span class="built_in">print</span>(2)</span><br><span class="line">                elif fl <span class="keyword">or</span> fr:</span><br><span class="line">                    <span class="built_in">print</span>(3)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="built_in">print</span>(3)</span><br><span class="line">    return</span><br><span class="line"></span><br><span class="line"><span class="attribute">test</span>=1</span><br><span class="line"><span class="attribute">test</span>=int(input())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(test):</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure>
+<p>C.按闹分配<br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>c</mi></msub><mtext>​−</mtext><msub><mi>S</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mtext>​</mtext><mo>≤</mo><mi>M</mi><mo>−</mo><mo>&gt;</mo><mi>k</mi><msub><mi>t</mi><mi>c</mi></msub><mo>≤</mo><mi>M</mi><mo stretchy="false">(</mo><mi>k</mi><mtext>为排在鸡后面的人数，注意不要大于</mtext><mi>n</mi><mo stretchy="false">)</mo><mtext>，预处理前缀和，每次询问</mtext><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">S_c​−S_{min}​≤M-&gt;kt_c≤M(k为排在鸡后面的人数，注意不要大于n)，预处理前缀和，每次询问O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">​</span><span class="mord">−</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">​</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">排</span><span class="mord cjk_fallback">在</span><span class="mord cjk_fallback">鸡</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">面</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">人</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">注</span><span class="mord cjk_fallback">意</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">于</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">预</span><span class="mord cjk_fallback">处</span><span class="mord cjk_fallback">理</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">缀</span><span class="mord cjk_fallback">和</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">次</span><span class="mord cjk_fallback">询</span><span class="mord cjk_fallback">问</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">def solve():</span><br><span class="line">    n,q,<span class="keyword">tc</span>=<span class="keyword">map</span>(<span class="keyword">int</span>,<span class="built_in">input</span>().<span class="keyword">split</span>())</span><br><span class="line">    t=[<span class="number">0</span>]+<span class="keyword">list</span>(<span class="keyword">map</span>(<span class="keyword">int</span>,<span class="built_in">input</span>().<span class="keyword">split</span>()))</span><br><span class="line">    t.<span class="keyword">sort</span>()</span><br><span class="line">    <span class="keyword">for</span> i in <span class="built_in">range</span>(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">        t[i]+=t[i-<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> i in <span class="built_in">range</span>(q):</span><br><span class="line">        M=<span class="keyword">int</span>(<span class="built_in">input</span>())</span><br><span class="line">        <span class="keyword">k</span>=<span class="built_in">min</span>(n,M//<span class="keyword">tc</span>)</span><br><span class="line">        <span class="keyword">print</span>(t[n-<span class="keyword">k</span>]+<span class="keyword">tc</span>)</span><br><span class="line">    <span class="keyword">return</span></span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi mathvariant="normal">.</mi><mtext>数组成鸡</mtext></mrow><annotation encoding="application/x-tex">D.数组成鸡</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord">.</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">组</span><span class="mord cjk_fallback">成</span><span class="mord cjk_fallback">鸡</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>询问的范围是</mtext><mo>±</mo><mn>1</mn><mi>e</mi><mn>9</mn><mtext>，将除</mtext><mn>0</mn><mtext>外不同的数相乘，最大</mtext><mn>16</mn><mtext>个就超过</mtext><mn>1</mn><mi>e</mi><mn>9</mn><mtext>了</mtext><mo stretchy="false">(</mo><mo>−</mo><mn>8</mn><mo>∗</mo><mo>−</mo><mn>7</mn><mo>∗</mo><mo>−</mo><mn>6</mn><mo>…</mo><mo>…</mo><mo>−</mo><mn>1</mn><mo>∗</mo><mn>1</mn><mo>∗</mo><mo>…</mo><mo>…</mo><mo>∗</mo><mn>8</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo separator="true">,</mo><mn>625</mn><mo separator="true">,</mo><mn>702</mn><mo separator="true">,</mo><mn>400</mn><mtext>，所以只有不同的数个数小于</mtext><mn>16</mn><mtext>的时候才需要考虑。</mtext></mrow><annotation encoding="application/x-tex">询问的范围是±1e9，将除0外不同的数相乘，最大16个就超过1e9了(-8*-7*-6……-1*1*……*8)=1,625,702,400，所以只有不同的数个数小于16的时候才需要考虑。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord cjk_fallback">询</span><span class="mord cjk_fallback">问</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">范</span><span class="mord cjk_fallback">围</span><span class="mord cjk_fallback">是</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">9</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">除</span><span class="mord">0</span><span class="mord cjk_fallback">外</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">同</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">相</span><span class="mord cjk_fallback">乘</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">大</span><span class="mord">1</span><span class="mord">6</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">超</span><span class="mord cjk_fallback">过</span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">9</span><span class="mord cjk_fallback">了</span><span class="mopen">(</span><span class="mord">−</span><span class="mord">8</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">6</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.46528em;vertical-align:0em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">8</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">6</span><span class="mord">2</span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">7</span><span class="mord">0</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mord">0</span><span class="mord">0</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">只</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">同</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">于</span><span class="mord">1</span><span class="mord">6</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">时</span><span class="mord cjk_fallback">候</span><span class="mord cjk_fallback">才</span><span class="mord cjk_fallback">需</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>最小为</mtext><mn>2</mn><mtext>，那么必定要有一个数绝对值在</mtext><msqrt><mrow><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow></msqrt><mtext>内，否则前两个数相乘就爆</mtext><mn>1</mn><mi>e</mi><mn>9</mn><mtext>了。</mtext></mrow><annotation encoding="application/x-tex">n最小为2，那么必定要有一个数绝对值在\sqrt{10^9}内，否则前两个数相乘就爆1e9了。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08494599999999997em;"></span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">为</span><span class="mord">2</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">那</span><span class="mord cjk_fallback">么</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">定</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">绝</span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">值</span><span class="mord cjk_fallback">在</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9550540000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span><span style="top:-2.915054em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08494599999999997em;"><span></span></span></span></span></span><span class="mord cjk_fallback">内</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">否</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">两</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">相</span><span class="mord cjk_fallback">乘</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">爆</span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">9</span><span class="mord cjk_fallback">了</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>枚举每个不同的数，令其为</mtext><mo>−</mo><msqrt><mrow><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow></msqrt><mtext>到</mtext><msqrt><mrow><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow></msqrt><mtext>，得到它的偏移量，给整个数组加上这个偏移量，得到乘积，不超过</mtext><mn>1</mn><mi>e</mi><mn>9</mn><mtext>就加到答案集合中。</mtext></mrow><annotation encoding="application/x-tex">枚举每个不同的数，令其为-\sqrt{10^9}到\sqrt{10^9}，得到它的偏移量，给整个数组加上这个偏移量，得到乘积，不超过1e9就加到答案集合中。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">同</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">令</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">为</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.08494599999999997em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9550540000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span><span style="top:-2.915054em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08494599999999997em;"><span></span></span></span></span></span><span class="mord cjk_fallback">到</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9550540000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span><span style="top:-2.915054em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08494599999999997em;"><span></span></span></span></span></span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">它</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">偏</span><span class="mord cjk_fallback">移</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">给</span><span class="mord cjk_fallback">整</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">组</span><span class="mord cjk_fallback">加</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">偏</span><span class="mord cjk_fallback">移</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">乘</span><span class="mord cjk_fallback">积</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">超</span><span class="mord cjk_fallback">过</span><span class="mord">1</span><span class="mord mathdefault">e</span><span class="mord">9</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">加</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">集</span><span class="mord cjk_fallback">合</span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>时间复杂度</mtext><mi>O</mi><mo stretchy="false">(</mo><mn>2</mn><mo>∗</mo><mn>15</mn><msqrt><mrow><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup></mrow></msqrt><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">时间复杂度O(2*15\sqrt{10^9}n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">时</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">复</span><span class="mord cjk_fallback">杂</span><span class="mord cjk_fallback">度</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.205054em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord">5</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9550540000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span></span><span style="top:-2.915054em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.08494599999999997em;"><span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> K=<span class="number">4e4</span>,inf=<span class="number">1e9</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,Q;</span><br><span class="line">    std::cin&gt;&gt;n&gt;&gt;Q;</span><br><span class="line"></span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">    std::map&lt;<span class="type">int</span>,<span class="type">int</span>&gt; cnt;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        std::cin&gt;&gt;a[i];</span><br><span class="line">        cnt[a[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    std::set&lt;<span class="type">int</span>&gt; S&#123;<span class="number">0</span>&#125;;</span><br><span class="line">    <span class="type">int</span> N=cnt.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">if</span>(N&lt;=<span class="number">15</span>)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> it=cnt.<span class="built_in">begin</span>();it!=cnt.<span class="built_in">end</span>();it++)&#123;</span><br><span class="line">            <span class="type">int</span> x=(*it).first;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> i=-K;i&lt;=K;i++)&#123;</span><br><span class="line">                <span class="type">int</span> z=i-x;</span><br><span class="line">                <span class="type">long</span> <span class="type">long</span> res=<span class="number">1</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;n;j++)&#123;</span><br><span class="line">                    res*=<span class="number">1ll</span>*a[j]+z;</span><br><span class="line">                    <span class="keyword">if</span>(std::<span class="built_in">abs</span>(res)&gt;inf)</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(std::<span class="built_in">abs</span>(res)&lt;=inf)</span><br><span class="line">                    S.<span class="built_in">insert</span>(res);</span><br><span class="line">            &#125;            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(Q--)&#123;</span><br><span class="line">        <span class="type">int</span> m;</span><br><span class="line">        std::cin&gt;&gt;m;</span><br><span class="line">        <span class="keyword">if</span>(S.<span class="built_in">count</span>(m))&#123;</span><br><span class="line">            std::cout&lt;&lt;<span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            std::cout&lt;&lt;<span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> test=<span class="number">1</span>;</span><br><span class="line">    <span class="comment">// std::cin&gt;&gt;test;</span></span><br><span class="line">    <span class="keyword">while</span>(test--)&#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi mathvariant="normal">.</mi><mtext>本题又主要考察了贪心</mtext></mrow><annotation encoding="application/x-tex">E.本题又主要考察了贪心</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord">.</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">题</span><span class="mord cjk_fallback">又</span><span class="mord cjk_fallback">主</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">察</span><span class="mord cjk_fallback">了</span><span class="mord cjk_fallback">贪</span><span class="mord cjk_fallback">心</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>数据范围很小，直接</mtext><mi>d</mi><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">数据范围很小，直接dfs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">据</span><span class="mord cjk_fallback">范</span><span class="mord cjk_fallback">围</span><span class="mord cjk_fallback">很</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">直</span><span class="mord cjk_fallback">接</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">s</span></span></span></span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">solve</span>():</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">dfs</span>(<span class="params">x</span>):</span><br><span class="line">        <span class="keyword">nonlocal</span> ans</span><br><span class="line">        <span class="keyword">if</span> x==m:</span><br><span class="line">            res=<span class="number">1</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">                <span class="keyword">if</span> a[i]&gt;a[<span class="number">0</span>]:</span><br><span class="line">                    res+=<span class="number">1</span></span><br><span class="line">            ans=<span class="built_in">min</span>(ans,res)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>):</span><br><span class="line">            a[u[x]]+=d[i][<span class="number">0</span>]</span><br><span class="line">            a[v[x]]+=d[i][<span class="number">1</span>]</span><br><span class="line">            dfs(x+<span class="number">1</span>)</span><br><span class="line">            a[u[x]]-=d[i][<span class="number">0</span>]</span><br><span class="line">            a[v[x]]-=d[i][<span class="number">1</span>]</span><br><span class="line">    n,m=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">    a=<span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split()))</span><br><span class="line">    u=[<span class="number">0</span>]*m;v=[<span class="number">0</span>]*m</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">        u[i],v[i]=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">        u[i]-=<span class="number">1</span>;v[i]-=<span class="number">1</span></span><br><span class="line">    d=[[<span class="number">3</span>,<span class="number">0</span>],[<span class="number">0</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">1</span>]]</span><br><span class="line">    ans=n</span><br><span class="line">    dfs(<span class="number">0</span>)</span><br><span class="line">    <span class="built_in">print</span>(ans)</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">test=<span class="number">1</span></span><br><span class="line">test=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(test):</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi mathvariant="normal">.</mi><mtext>鸡数题</mtext></mrow><annotation encoding="application/x-tex">F.鸡数题</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="mord">.</span><span class="mord cjk_fallback">鸡</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">题</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>第二类斯特林数通项公式</mtext></mrow><annotation encoding="application/x-tex">第二类斯特林数通项公式</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">第</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">类</span><span class="mord cjk_fallback">斯</span><span class="mord cjk_fallback">特</span><span class="mord cjk_fallback">林</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">通</span><span class="mord cjk_fallback">项</span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">式</span></span></span></span></p>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">def qmi(a,k,p)<span class="symbol">:</span></span><br><span class="line">    res=<span class="number">1</span></span><br><span class="line">    while <span class="symbol">k:</span></span><br><span class="line">        <span class="built_in">if</span> k&amp;<span class="symbol">1:re</span>s=res*a%p</span><br><span class="line">        a=a*a%p</span><br><span class="line">        k&gt;&gt;=<span class="number">1</span></span><br><span class="line">    return res</span><br><span class="line"></span><br><span class="line">def init()<span class="symbol">:</span></span><br><span class="line">    <span class="built_in">fact</span>[<span class="number">0</span>]=infact[<span class="number">0</span>]=<span class="number">1</span></span><br><span class="line">    for i in range(<span class="number">1</span>,<span class="built_in">N</span>)<span class="symbol">:</span></span><br><span class="line">        <span class="built_in">fact</span>[i]=<span class="built_in">fact</span>[i-<span class="number">1</span>]*i%<span class="built_in">mod</span></span><br><span class="line">        infact[i]=infact[i-<span class="number">1</span>]*qmi(i,<span class="built_in">mod</span>-<span class="number">2</span>,<span class="built_in">mod</span>)%<span class="built_in">mod</span></span><br><span class="line"></span><br><span class="line">def C(a,b)<span class="symbol">:</span></span><br><span class="line">    return <span class="built_in">fact</span>[a]*infact[b]*infact[a-b]%<span class="built_in">mod</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">n</span>,m=map(<span class="built_in">int</span>,input().split())</span><br><span class="line"><span class="built_in">mod</span>=<span class="number">1000000007</span>;<span class="built_in">N</span>=<span class="number">100010</span></span><br><span class="line"><span class="built_in">fact</span>=[<span class="number">0</span>]*<span class="built_in">N</span>;infact=[<span class="number">0</span>]*<span class="built_in">N</span></span><br><span class="line">init()</span><br><span class="line">S=<span class="number">0</span>;<span class="built_in">sign</span>=-<span class="number">1</span></span><br><span class="line">for k in range(m+<span class="number">1</span>)<span class="symbol">:</span></span><br><span class="line">    <span class="built_in">sign</span>*=-<span class="number">1</span></span><br><span class="line">    S=(S+<span class="built_in">sign</span>*C(m,k)*qmi(m-k,<span class="built_in">n</span>,<span class="built_in">mod</span>)%<span class="built_in">mod</span>)%<span class="built_in">mod</span></span><br><span class="line">for i in range(<span class="number">1</span>,m+<span class="number">1</span>)<span class="symbol">:</span></span><br><span class="line">    S=S*qmi(i,<span class="built_in">mod</span>-<span class="number">2</span>,<span class="built_in">mod</span>)%<span class="built_in">mod</span></span><br><span class="line">print(S)</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi mathvariant="normal">.</mi><mi>w</mi><mi>h</mi><mi>y</mi><mtext>买外卖</mtext></mrow><annotation encoding="application/x-tex">G.why买外卖</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">G</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">h</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord cjk_fallback">买</span><span class="mord cjk_fallback">外</span><span class="mord cjk_fallback">卖</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>按</mtext><msub><mi>a</mi><mi>i</mi></msub><mtext>排序，小于等于该价格的满减都用上，能小于等于</mtext><mi>m</mi><mtext>就更新</mtext><mi>a</mi><mi>n</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">按a_i排序，小于等于该价格的满减都用上，能小于等于m就更新ans</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord cjk_fallback">按</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord cjk_fallback">排</span><span class="mord cjk_fallback">序</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">等</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">该</span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">满</span><span class="mord cjk_fallback">减</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">用</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">等</span><span class="mord cjk_fallback">于</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">更</span><span class="mord cjk_fallback">新</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span></span></span></span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment"># sys.setrecursionlimit(1000000)</span></span><br><span class="line"><span class="built_in">input</span>=<span class="keyword">lambda</span>:sys.stdin.readline().strip()</span><br><span class="line">write=<span class="keyword">lambda</span> x:sys.stdout.write(<span class="built_in">str</span>(x)+<span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> decimal <span class="keyword">import</span> Decimal</span><br><span class="line"><span class="comment"># from datetime import datetime,timedelta</span></span><br><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> randint,shuffle</span><br><span class="line"><span class="comment"># from copy import deepcopy</span></span><br><span class="line"><span class="comment"># from collections import deque,Counter,namedtuple</span></span><br><span class="line"><span class="comment"># from heapq import heapify,heappush,heappop</span></span><br><span class="line"><span class="comment"># from bisect import bisect_left,bisect,insort</span></span><br><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> inf,sqrt,gcd,ceil,floor,e,log,log2,log10,pi,sin,cos,tan,asin,acos,atan</span><br><span class="line"><span class="comment"># from functools import cmp_to_key,reduce</span></span><br><span class="line"><span class="comment"># from operator import or_,xor,add,mul</span></span><br><span class="line"><span class="comment"># from itertools import permutations,combinations,accumulate</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">solve</span>():</span><br><span class="line">    n,m=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">    c=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        a,b=<span class="built_in">map</span>(<span class="built_in">int</span>,<span class="built_in">input</span>().split())</span><br><span class="line">        c.append([a,b])</span><br><span class="line">    c.sort()</span><br><span class="line">    s=[<span class="number">0</span>];res=[m]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        s.append(s[i]+c[i][<span class="number">1</span>])</span><br><span class="line">        res.append(c[i][<span class="number">0</span>]-s[i+<span class="number">1</span>])</span><br><span class="line">    ans=m</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n+<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i <span class="keyword">and</span> res[i]&lt;=m:</span><br><span class="line">            ans=<span class="built_in">max</span>(ans,m-res[i]+c[i-<span class="number">1</span>][<span class="number">0</span>])</span><br><span class="line">    <span class="built_in">print</span>(ans)</span><br><span class="line"></span><br><span class="line">test=<span class="number">1</span></span><br><span class="line">test=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(test):</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi mathvariant="normal">.</mi><mn>01</mn><mtext>背包，但是</mtext><mi>b</mi><mi>i</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">H.01背包，但是bit</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord">.</span><span class="mord">0</span><span class="mord">1</span><span class="mord cjk_fallback">背</span><span class="mord cjk_fallback">包</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">但</span><span class="mord cjk_fallback">是</span><span class="mord mathdefault">b</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mi>r</mi><mtext>起来要小于等于</mtext><mi>m</mi><mtext>，若最终重量就是</mtext><mi>m</mi><mtext>，则选中的重量的二进制里的</mtext><mn>1</mn><mtext>必须严格是</mtext><mi>m</mi><mtext>的子集。</mtext></mrow><annotation encoding="application/x-tex">or起来要小于等于m，若最终重量就是m，则选中的重量的二进制里的1必须严格是m的子集。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord cjk_fallback">起</span><span class="mord cjk_fallback">来</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">等</span><span class="mord cjk_fallback">于</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">若</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">终</span><span class="mord cjk_fallback">重</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">是</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">选</span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">重</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">进</span><span class="mord cjk_fallback">制</span><span class="mord cjk_fallback">里</span><span class="mord cjk_fallback">的</span><span class="mord">1</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">须</span><span class="mord cjk_fallback">严</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">是</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">子</span><span class="mord cjk_fallback">集</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>若小于</mtext><mi>m</mi><mtext>，可以枚举</mtext><mi>m</mi><mtext>二进制的每个</mtext><mn>1</mn><mtext>位，令其为</mtext><mn>0</mn><mtext>，后面的都为</mtext><mn>1</mn><mtext>，再去找所有是其自己的物品。</mtext></mrow><annotation encoding="application/x-tex">若小于m，可以枚举m二进制的每个1位，令其为0，后面的都为1，再去找所有是其自己的物品。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">若</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">于</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord mathdefault">m</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">进</span><span class="mord cjk_fallback">制</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord">1</span><span class="mord cjk_fallback">位</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">令</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">为</span><span class="mord">0</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">面</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">为</span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">再</span><span class="mord cjk_fallback">去</span><span class="mord cjk_fallback">找</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">是</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">自</span><span class="mord cjk_fallback">己</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">品</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    std::cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">v</span><span class="params">(n)</span>,<span class="title">w</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        std::cin&gt;&gt;v[i]&gt;&gt;w[i];</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">auto</span> check=[&amp;](<span class="type">int</span> x)&#123;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>((x&amp;w[i])==w[i])</span><br><span class="line">                res+=v[i];</span><br><span class="line">        &#125;</span><br><span class="line">        ans=std::<span class="built_in">max</span>(ans,res);</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">27</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(m&gt;&gt;i&amp;<span class="number">1</span>)</span><br><span class="line">            <span class="built_in">check</span>(m^(<span class="number">1</span>&lt;&lt;i)|((<span class="number">1</span>&lt;&lt;i)<span class="number">-1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">check</span>(m);</span><br><span class="line">    std::cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> test=<span class="number">1</span>;</span><br><span class="line">    std::cin&gt;&gt;test;</span><br><span class="line">    <span class="keyword">while</span>(test--)&#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi mathvariant="normal">.</mi><mi>I</mi><msup><mi>t</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mi>s</mi><mi>b</mi><mi>e</mi><mi>r</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>d</mi><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>d</mi><mi>o</mi><mi>x</mi><mi mathvariant="normal">.</mi><mi>A</mi><mi>g</mi><mi>a</mi><mi>i</mi><mi>n</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">I.It&#x27;s bertrand paradox. Again!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.946332em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord">.</span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mord mathdefault">s</span><span class="mord mathdefault">b</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">t</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault">x</span><span class="mord">.</span><span class="mord mathdefault">A</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">a</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mclose">!</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>随便找一个使两种方法有明显差异的统计量即可。</mtext></mrow><annotation encoding="application/x-tex">随便找一个使两种方法有明显差异的统计量即可。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">随</span><span class="mord cjk_fallback">便</span><span class="mord cjk_fallback">找</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">使</span><span class="mord cjk_fallback">两</span><span class="mord cjk_fallback">种</span><span class="mord cjk_fallback">方</span><span class="mord cjk_fallback">法</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">明</span><span class="mord cjk_fallback">显</span><span class="mord cjk_fallback">差</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">统</span><span class="mord cjk_fallback">计</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin&gt;&gt;n;</span><br><span class="line">    <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> x,y,r;</span><br><span class="line">        std::cin&gt;&gt;x&gt;&gt;y&gt;&gt;r;</span><br><span class="line">        sum+=std::<span class="built_in">abs</span>(x)+<span class="built_in">abs</span>(y);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(sum&gt;<span class="number">90</span>*n)&#123;</span><br><span class="line">        std::cout&lt;&lt;<span class="string">&quot;bit-noob\n&quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        std::cout&lt;&lt;<span class="string">&quot;buaa-noob\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> test=<span class="number">1</span>;</span><br><span class="line">    <span class="comment">// std::cin&gt;&gt;test;</span></span><br><span class="line">    <span class="keyword">while</span>(test--)&#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mi mathvariant="normal">.</mi><mtext>又鸟之亦心</mtext></mrow><annotation encoding="application/x-tex">J.又鸟之亦心</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span><span class="mord">.</span><span class="mord cjk_fallback">又</span><span class="mord cjk_fallback">鸟</span><span class="mord cjk_fallback">之</span><span class="mord cjk_fallback">亦</span><span class="mord cjk_fallback">心</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>最大值最小，考虑二分答案。</mtext></mrow><annotation encoding="application/x-tex">最大值最小，考虑二分答案。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">值</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">分</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>二分最大距离</mtext><mi>d</mi><mtext>，进行</mtext><mi>c</mi><mi>h</mi><mi>e</mi><mi>c</mi><mi>k</mi><mtext>：枚举每个新的点，若原有两人所在的点中某些点到此距离大于</mtext><mi>d</mi><mo separator="true">,</mo><mtext>则删去。若删完后为空集，则该距离过小，否则过大。</mtext></mrow><annotation encoding="application/x-tex">二分最大距离d，进行check：枚举每个新的点，若原有两人所在的点中某些点到此距离大于d,则删去。若删完后为空集，则该距离过小，否则过大。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">分</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">距</span><span class="mord cjk_fallback">离</span><span class="mord mathdefault">d</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">进</span><span class="mord cjk_fallback">行</span><span class="mord mathdefault">c</span><span class="mord mathdefault">h</span><span class="mord mathdefault">e</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback">：</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">新</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">若</span><span class="mord cjk_fallback">原</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">两</span><span class="mord cjk_fallback">人</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">在</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">某</span><span class="mord cjk_fallback">些</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">此</span><span class="mord cjk_fallback">距</span><span class="mord cjk_fallback">离</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">于</span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">删</span><span class="mord cjk_fallback">去</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">若</span><span class="mord cjk_fallback">删</span><span class="mord cjk_fallback">完</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">空</span><span class="mord cjk_fallback">集</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">该</span><span class="mord cjk_fallback">距</span><span class="mord cjk_fallback">离</span><span class="mord cjk_fallback">过</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">否</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">过</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,x,y;</span><br><span class="line">    std::cin&gt;&gt;n&gt;&gt;x&gt;&gt;y;</span><br><span class="line"></span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        std::cin&gt;&gt;a[i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> check=[&amp;](<span class="type">int</span> d)&#123;</span><br><span class="line">        std::set&lt;<span class="type">int</span>&gt; S;</span><br><span class="line">        <span class="keyword">if</span>(std::<span class="built_in">abs</span>(x-y)&gt;d)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="type">int</span> last=y;</span><br><span class="line">        S.<span class="built_in">insert</span>(x);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(!S.<span class="built_in">empty</span>()&amp;&amp;std::<span class="built_in">abs</span>(last-a[i])&lt;=d)</span><br><span class="line">                S.<span class="built_in">insert</span>(last);</span><br><span class="line">            <span class="keyword">while</span>(!S.<span class="built_in">empty</span>()&amp;&amp;std::<span class="built_in">abs</span>(a[i]-*S.<span class="built_in">begin</span>())&gt;d)</span><br><span class="line">                S.<span class="built_in">erase</span>(*S.<span class="built_in">begin</span>());</span><br><span class="line">            <span class="keyword">while</span>(!S.<span class="built_in">empty</span>()&amp;&amp;std::<span class="built_in">abs</span>(a[i]-*S.<span class="built_in">rbegin</span>())&gt;d)</span><br><span class="line">                S.<span class="built_in">erase</span>(*S.<span class="built_in">rbegin</span>());</span><br><span class="line">            last=a[i];</span><br><span class="line">            <span class="keyword">if</span>(S.<span class="built_in">empty</span>())</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> l=<span class="number">0</span>,r=<span class="number">1e9</span>;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;r)&#123;</span><br><span class="line">        <span class="type">int</span> mid=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">check</span>(mid))&#123;</span><br><span class="line">            r=mid;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            l=mid+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    std::cout&lt;&lt;l&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> test=<span class="number">1</span>;</span><br><span class="line">    <span class="comment">// std::cin&gt;&gt;test;</span></span><br><span class="line">    <span class="keyword">while</span>(test--)&#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi mathvariant="normal">.</mi><mtext>牛镇公务员考试</mtext></mrow><annotation encoding="application/x-tex">K.牛镇公务员考试</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord">.</span><span class="mord cjk_fallback">牛</span><span class="mord cjk_fallback">镇</span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">务</span><span class="mord cjk_fallback">员</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">试</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>每个题的答案都被另一个题所约束，即每个点出度为</mtext><mn>1</mn><mtext>，则必定会形成一棵基环内向树。所有的题形成一座基环内向森林。</mtext></mrow><annotation encoding="application/x-tex">每个题的答案都被另一个题所约束，即每个点出度为1，则必定会形成一棵基环内向树。所有的题形成一座基环内向森林。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">题</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">另</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">题</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">约</span><span class="mord cjk_fallback">束</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">度</span><span class="mord cjk_fallback">为</span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">定</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">形</span><span class="mord cjk_fallback">成</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">棵</span><span class="mord cjk_fallback">基</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">内</span><span class="mord cjk_fallback">向</span><span class="mord cjk_fallback">树</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">题</span><span class="mord cjk_fallback">形</span><span class="mord cjk_fallback">成</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">座</span><span class="mord cjk_fallback">基</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">内</span><span class="mord cjk_fallback">向</span><span class="mord cjk_fallback">森</span><span class="mord cjk_fallback">林</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>对于每棵基环树，选取环上一点，枚举这道题答案，沿着环得到环上每个点答案，最终回到该点，若答案与最开始选择一致，则答案加一。</mtext></mrow><annotation encoding="application/x-tex">对于每棵基环树，选取环上一点，枚举这道题答案，沿着环得到环上每个点答案，最终回到该点，若答案与最开始选择一致，则答案加一。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">棵</span><span class="mord cjk_fallback">基</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">树</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">选</span><span class="mord cjk_fallback">取</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">道</span><span class="mord cjk_fallback">题</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">沿</span><span class="mord cjk_fallback">着</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">终</span><span class="mord cjk_fallback">回</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">该</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">若</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">与</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">开</span><span class="mord cjk_fallback">始</span><span class="mord cjk_fallback">选</span><span class="mord cjk_fallback">择</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">致</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">加</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">。</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>最终将每棵基环树的答案数量相乘。</mtext></mrow><annotation encoding="application/x-tex">最终将每棵基环树的答案数量相乘。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">终</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">棵</span><span class="mord cjk_fallback">基</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">树</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">量</span><span class="mord cjk_fallback">相</span><span class="mord cjk_fallback">乘</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> mod=<span class="number">998244353</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin&gt;&gt;n;</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="function">std::vector&lt;std::string&gt; <span class="title">s</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        std::cin&gt;&gt;a[i]&gt;&gt;s[i];</span><br><span class="line">        a[i]--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> ans=<span class="number">1</span>;</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">vis</span><span class="params">(n,<span class="number">-1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">        <span class="type">int</span> j=i;</span><br><span class="line">        <span class="keyword">while</span>(vis[j]==<span class="number">-1</span>)&#123;</span><br><span class="line">            vis[j]=i;</span><br><span class="line">            j=a[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(vis[j]==i)&#123;</span><br><span class="line">            <span class="type">int</span> len=<span class="number">0</span>,k=j;</span><br><span class="line">            <span class="keyword">do</span>&#123;</span><br><span class="line">                len++;</span><br><span class="line">                k=a[k];</span><br><span class="line">            &#125;<span class="keyword">while</span>(k!=j);</span><br><span class="line">            <span class="type">int</span> res=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> x=<span class="number">0</span>;x&lt;<span class="number">5</span>;x++)&#123;</span><br><span class="line">                <span class="type">int</span> v=x;</span><br><span class="line">                <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">                    v=s[k][v]-<span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">                    k=a[k];</span><br><span class="line">                &#125;</span><br><span class="line">                res+=v==x;</span><br><span class="line">            &#125;</span><br><span class="line">            ans=ans*res%mod;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    std::cout&lt;&lt;ans&lt;&lt;<span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> test=<span class="number">1</span>;</span><br><span class="line">    <span class="comment">// std::cin&gt;&gt;test;</span></span><br><span class="line">    <span class="keyword">while</span>(test--)&#123;</span><br><span class="line">        <span class="built_in">solve</span>();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi mathvariant="normal">.</mi><mtext>要有光</mtext></mrow><annotation encoding="application/x-tex">L.要有光</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mord">.</span><span class="mord cjk_fallback">要</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">光</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>中学简单几何，答案为</mtext><mn>3</mn><mi>c</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">中学简单几何，答案为3cw</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">学</span><span class="mord cjk_fallback">简</span><span class="mord cjk_fallback">单</span><span class="mord cjk_fallback">几</span><span class="mord cjk_fallback">何</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">为</span><span class="mord">3</span><span class="mord mathdefault">c</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span></span></span></span></p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def <span class="built_in">solve</span>():</span><br><span class="line">    c,d,h,w=<span class="built_in">map</span>(int,<span class="built_in">input</span>().<span class="built_in">split</span>())</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">3</span>*w*c)</span><br><span class="line">    return</span><br><span class="line"></span><br><span class="line">test=<span class="number">1</span></span><br><span class="line">test=<span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">for _ in <span class="built_in">range</span>(test):</span><br><span class="line">    <span class="built_in">solve</span>()</span><br></pre></td></tr></table></figure>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi mathvariant="normal">.</mi><mtext>牛客老粉才知道的秘密</mtext></mrow><annotation encoding="application/x-tex">M.牛客老粉才知道的秘密</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord">.</span><span class="mord cjk_fallback">牛</span><span class="mord cjk_fallback">客</span><span class="mord cjk_fallback">老</span><span class="mord cjk_fallback">粉</span><span class="mord cjk_fallback">才</span><span class="mord cjk_fallback">知</span><span class="mord cjk_fallback">道</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">秘</span><span class="mord cjk_fallback">密</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext>为</mtext><mn>6</mn><mtext>的倍数，则为</mtext><mi>n</mi><mi mathvariant="normal">/</mi><mn>6</mn><mo separator="true">,</mo><mtext>否则</mtext><mi>n</mi><mi mathvariant="normal">/</mi><mn>6</mn><mo>∗</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n为6的倍数，则为n/6,否则n/6*2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">为</span><span class="mord">6</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord cjk_fallback">为</span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">6</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">否</span><span class="mord cjk_fallback">则</span><span class="mord mathdefault">n</span><span class="mord">/</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span></p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def solve():</span><br><span class="line">    <span class="keyword">n</span>=int(<span class="keyword">input</span>())</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">n</span>%6==0:</span><br><span class="line">        <span class="keyword">print</span>(<span class="keyword">n</span><span class="comment">//6)</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span>(<span class="keyword">n</span><span class="comment">//6*2)</span></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">test</span>=1</span><br><span class="line"><span class="keyword">test</span>=int(<span class="keyword">input</span>())</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="keyword">range</span>(<span class="keyword">test</span>):</span><br><span class="line">    solve()</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://umbrellasoldier.github.io/2024/02/03/2024%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A51/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2024/02/09/ABC/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            ABC
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2023/11/23/Codeforces-Round-895-Div-3/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Codeforces Round 895 (Div. 3)</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+    
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2023-2024
+        <i class="ri-heart-fill heart_icon"></i> Shiki
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://pic.imgdb.cn/item/6555be1fc458853aef297314.webp" alt="一人ぼっち"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">图片</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/MathJax.js"></script>
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/config/TeX-AMS-MML_HTMLorMML-full.js"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+ 
+    
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.15.1/katex.min.css">
+        <script src="https://cdn.staticfile.org/KaTeX/0.15.1/katex.min.js"></script>
+        <script src="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/auto-render.min.js"></script>
+        
+            <script src="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/copy-tex.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/copy-tex.min.css">
+        
+    
+ 
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=2083872221&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>

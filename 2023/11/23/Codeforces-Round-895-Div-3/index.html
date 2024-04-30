@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="Be Strongger!" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Codeforces Round 895 (Div. 3) |  一人ぼっち</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><link rel="alternate" href="/atom.xml" title="一人ぼっち" type="application/atom+xml">
+<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-Codeforces-Round-895-Div-3"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Codeforces Round 895 (Div. 3)
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/11/23/Codeforces-Round-895-Div-3/" class="article-date">
+  <time datetime="2023-11-23T13:34:59.000Z" itemprop="datePublished">2023-11-23</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Codeforces/">Codeforces</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">6 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1872">Codeforces Round 895 (Div. 3)</a></p>
+<h2 id="a-two-vessels"><a class="header-anchor" href="#a-two-vessels">¶</a>_ A.Two Vessels_</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>一次操作可以让两个杯子的差减少</mtext><mn>2</mn><mo>∗</mo><mi>c</mi><mtext>，所以答案是两个杯子的差除</mtext><mn>2</mn><mo>∗</mo><mi>c</mi><mtext>上取整，即</mtext><mo stretchy="false">(</mo><mi>a</mi><mi>b</mi><mi>s</mi><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo>∗</mo><mi>c</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo>∗</mo><mi>c</mi><mtext>。</mtext><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">一次操作可以让两个杯子的差减少2*c，所以答案是两个杯子的差除2*c上取整，即(abs(a-b)+2*c-1)//2*c。O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">次</span><span class="mord cjk_fallback">操</span><span class="mord cjk_fallback">作</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">让</span><span class="mord cjk_fallback">两</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">杯</span><span class="mord cjk_fallback">子</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">差</span><span class="mord cjk_fallback">减</span><span class="mord cjk_fallback">少</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">c</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">是</span><span class="mord cjk_fallback">两</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">杯</span><span class="mord cjk_fallback">子</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">差</span><span class="mord cjk_fallback">除</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">c</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">取</span><span class="mord cjk_fallback">整</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mord mathdefault">b</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">/</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">c</span><span class="mord cjk_fallback">。</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<h2 id="b-the-corridor-or-there-and-back-again"><a class="header-anchor" href="#b-the-corridor-or-there-and-back-again">¶</a>_B.The Corridor or There and Back Again _</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>对于每个陷阱，都满足</mtext><mi>s</mi><mo>&gt;</mo><mn>2</mn><mo>∗</mo><mo stretchy="false">(</mo><mi>k</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mtext>，即</mtext><mi>k</mi><mo>&lt;</mo><mi>s</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo>+</mo><mi>d</mi><mtext>，即</mtext><mi>k</mi><mtext>最大可取</mtext><mi>c</mi><mi>e</mi><mi>i</mi><mi>l</mi><mo stretchy="false">(</mo><mi>s</mi><mi mathvariant="normal">/</mi><mn>2</mn><mo>+</mo><mi>d</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mtext>。</mtext><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">对于每个陷阱，都满足s&gt;2*(k-d)，即k&lt;s/2+d，即k最大可取ceil(s/2+d-1)。O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">陷</span><span class="mord cjk_fallback">阱</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">满</span><span class="mord cjk_fallback">足</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mclose">)</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord">/</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">取</span><span class="mord mathdefault">c</span><span class="mord mathdefault">e</span><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mord">/</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">d</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord cjk_fallback">。</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+<h2 id="c-non-coprime-split"><a class="header-anchor" href="#c-non-coprime-split">¶</a>_C.Non-coprime Split _</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>求</mtext><mi>l</mi><mtext> </mtext><mi>r</mi><mtext>中的一个合数，很容易找到，所以不用筛，直接暴力枚举判断即可。注意最小从</mtext><mn>4</mn><mtext>开始枚举。</mtext></mrow><annotation encoding="application/x-tex">求l~r中的一个合数，很容易找到，所以不用筛，直接暴力枚举判断即可。注意最小从4开始枚举。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord cjk_fallback">求</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mspace nobreak"> </span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">合</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">很</span><span class="mord cjk_fallback">容</span><span class="mord cjk_fallback">易</span><span class="mord cjk_fallback">找</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">用</span><span class="mord cjk_fallback">筛</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">直</span><span class="mord cjk_fallback">接</span><span class="mord cjk_fallback">暴</span><span class="mord cjk_fallback">力</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">判</span><span class="mord cjk_fallback">断</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">注</span><span class="mord cjk_fallback">意</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">从</span><span class="mord">4</span><span class="mord cjk_fallback">开</span><span class="mord cjk_fallback">始</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<h2 id="d-plus-minus-permutation"><a class="header-anchor" href="#d-plus-minus-permutation">¶</a><em>D.Plus Minus Permutation</em></h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>下标为</mtext><mi>x</mi><mtext>和</mtext><mi>y</mi><mtext>的公倍数的数最终会被抵消，所以考虑非公倍数的</mtext><mi>x</mi><mtext>的倍数和</mtext><mi>y</mi><mtext>的倍数。</mtext></mrow><annotation encoding="application/x-tex">下标为x和y的公倍数的数最终会被抵消，所以考虑非公倍数的x的倍数和y的倍数。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">下</span><span class="mord cjk_fallback">标</span><span class="mord cjk_fallback">为</span><span class="mord mathdefault">x</span><span class="mord cjk_fallback">和</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">终</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">抵</span><span class="mord cjk_fallback">消</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">非</span><span class="mord cjk_fallback">公</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord mathdefault">x</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">和</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>前</mtext><mi>x</mi><mtext>大的数减去前</mtext><mi>y</mi><mtext>个小的数，即为答案。</mtext></mrow><annotation encoding="application/x-tex">前x大的数减去前y个小的数，即为答案。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">前</span><span class="mord mathdefault">x</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">减</span><span class="mord cjk_fallback">去</span><span class="mord cjk_fallback">前</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<h2 id="e-data-structures-fan"><a class="header-anchor" href="#e-data-structures-fan">¶</a>_E.Data Structures Fan _</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>先求出未修改时的初始答案，再求个异或前缀和，每次区间反转，都将答案异或上区间异或和。</mtext></mrow><annotation encoding="application/x-tex">先求出未修改时的初始答案，再求个异或前缀和，每次区间反转，都将答案异或上区间异或和。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">先</span><span class="mord cjk_fallback">求</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">未</span><span class="mord cjk_fallback">修</span><span class="mord cjk_fallback">改</span><span class="mord cjk_fallback">时</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">初</span><span class="mord cjk_fallback">始</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">再</span><span class="mord cjk_fallback">求</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">或</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">缀</span><span class="mord cjk_fallback">和</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">次</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">反</span><span class="mord cjk_fallback">转</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">或</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">或</span><span class="mord cjk_fallback">和</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>这样原本有这个数就会消去，原本没有这个数就会异或上这个数。</mtext><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">这样原本有这个数就会消去，原本没有这个数就会异或上这个数。O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">样</span><span class="mord cjk_fallback">原</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">消</span><span class="mord cjk_fallback">去</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">原</span><span class="mord cjk_fallback">本</span><span class="mord cjk_fallback">没</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">就</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">或</span><span class="mord cjk_fallback">上</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">。</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+<h2 id="f-selling-a-menagerie"><a class="header-anchor" href="#f-selling-a-menagerie">¶</a>_F.Selling a Menagerie _</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>每个动物都有害怕的动物，但未必每只动物都被其他动物害怕。</mtext></mrow><annotation encoding="application/x-tex">每个动物都有害怕的动物，但未必每只动物都被其他动物害怕。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">害</span><span class="mord cjk_fallback">怕</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">但</span><span class="mord cjk_fallback">未</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">只</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">他</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">害</span><span class="mord cjk_fallback">怕</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>将这些动物卖出能得到双倍收益</mtext><mo separator="true">,</mo><mtext>且卖出后可能会得到新的不被其他动物害怕的动物。</mtext></mrow><annotation encoding="application/x-tex">将这些动物卖出能得到双倍收益,且卖出后可能会得到新的不被其他动物害怕的动物。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">些</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">双</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">收</span><span class="mord cjk_fallback">益</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">且</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">新</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">他</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">害</span><span class="mord cjk_fallback">怕</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>所以将这些动物先卖出必是最优解。</mtext></mrow><annotation encoding="application/x-tex">所以将这些动物先卖出必是最优解。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">以</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">些</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">先</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">是</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">优</span><span class="mord cjk_fallback">解</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>卖出之后，剩下的动物必定有害怕的动物且被其他动物害怕。</mtext></mrow><annotation encoding="application/x-tex">卖出之后，剩下的动物必定有害怕的动物且被其他动物害怕。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">之</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">剩</span><span class="mord cjk_fallback">下</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">定</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">害</span><span class="mord cjk_fallback">怕</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">且</span><span class="mord cjk_fallback">被</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">他</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">害</span><span class="mord cjk_fallback">怕</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>由此构成一个个循环节</mtext><mo separator="true">,</mo><mtext>每个循环节相互独立，分别考虑。</mtext></mrow><annotation encoding="application/x-tex">由此构成一个个循环节,每个循环节相互独立，分别考虑。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">由</span><span class="mord cjk_fallback">此</span><span class="mord cjk_fallback">构</span><span class="mord cjk_fallback">成</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">循</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">节</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">循</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">节</span><span class="mord cjk_fallback">相</span><span class="mord cjk_fallback">互</span><span class="mord cjk_fallback">独</span><span class="mord cjk_fallback">立</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">分</span><span class="mord cjk_fallback">别</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>对每个循环节来说，从任何一个节点开始卖出，都必定有一个动物只能卖出单倍价格。</mtext></mrow><annotation encoding="application/x-tex">对每个循环节来说，从任何一个节点开始卖出，都必定有一个动物只能卖出单倍价格。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">每</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">循</span><span class="mord cjk_fallback">环</span><span class="mord cjk_fallback">节</span><span class="mord cjk_fallback">来</span><span class="mord cjk_fallback">说</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">从</span><span class="mord cjk_fallback">任</span><span class="mord cjk_fallback">何</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">节</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">开</span><span class="mord cjk_fallback">始</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">必</span><span class="mord cjk_fallback">定</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">动</span><span class="mord cjk_fallback">物</span><span class="mord cjk_fallback">只</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">单</span><span class="mord cjk_fallback">倍</span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>根据贪心，使其为价格最低的那只，将其最后卖出即可。</mtext><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">根据贪心，使其为价格最低的那只，将其最后卖出即可。O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">根</span><span class="mord cjk_fallback">据</span><span class="mord cjk_fallback">贪</span><span class="mord cjk_fallback">心</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">使</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">价</span><span class="mord cjk_fallback">格</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">低</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">那</span><span class="mord cjk_fallback">只</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">卖</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">。</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+<h2 id="g-replace-with-product"><a class="header-anchor" href="#g-replace-with-product">¶</a>_G.Replace With Product _</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>暴力枚举：将所有不为</mtext><mn>1</mn><mtext>的数的下标取出，枚举左右边界，计算新数组的最大值，得出答案。</mtext></mrow><annotation encoding="application/x-tex">暴力枚举：将所有不为1的数的下标取出，枚举左右边界，计算新数组的最大值，得出答案。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">暴</span><span class="mord cjk_fallback">力</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">：</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">所</span><span class="mord cjk_fallback">有</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">为</span><span class="mord">1</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">下</span><span class="mord cjk_fallback">标</span><span class="mord cjk_fallback">取</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">枚</span><span class="mord cjk_fallback">举</span><span class="mord cjk_fallback">左</span><span class="mord cjk_fallback">右</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">界</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">计</span><span class="mord cjk_fallback">算</span><span class="mord cjk_fallback">新</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">组</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">值</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">得</span><span class="mord cjk_fallback">出</span><span class="mord cjk_fallback">答</span><span class="mord cjk_fallback">案</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>但直接暴力会超时，考虑优化。</mtext></mrow><annotation encoding="application/x-tex">但直接暴力会超时，考虑优化。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">但</span><span class="mord cjk_fallback">直</span><span class="mord cjk_fallback">接</span><span class="mord cjk_fallback">暴</span><span class="mord cjk_fallback">力</span><span class="mord cjk_fallback">会</span><span class="mord cjk_fallback">超</span><span class="mord cjk_fallback">时</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">优</span><span class="mord cjk_fallback">化</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>双指针将范围从</mtext><mn>1</mn><mtext> </mtext><mi>n</mi><mtext>缩小到左右边界都不为</mtext><mn>1</mn><mtext>，对于这个范围长度为</mtext><mi>n</mi><mtext>的区间，考虑是否能直接取整个区间。</mtext></mrow><annotation encoding="application/x-tex">双指针将范围从1~n缩小到左右边界都不为1，对于这个范围长度为n的区间，考虑是否能直接取整个区间。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">双</span><span class="mord cjk_fallback">指</span><span class="mord cjk_fallback">针</span><span class="mord cjk_fallback">将</span><span class="mord cjk_fallback">范</span><span class="mord cjk_fallback">围</span><span class="mord cjk_fallback">从</span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">缩</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">左</span><span class="mord cjk_fallback">右</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">界</span><span class="mord cjk_fallback">都</span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">为</span><span class="mord">1</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">于</span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">范</span><span class="mord cjk_fallback">围</span><span class="mord cjk_fallback">长</span><span class="mord cjk_fallback">度</span><span class="mord cjk_fallback">为</span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">考</span><span class="mord cjk_fallback">虑</span><span class="mord cjk_fallback">是</span><span class="mord cjk_fallback">否</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">直</span><span class="mord cjk_fallback">接</span><span class="mord cjk_fallback">取</span><span class="mord cjk_fallback">整</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>对当前区间求前缀积，假设某个前缀积</mtext><mi>p</mi><mtext>，当前的情况最坏可能是</mtext><mi>p</mi><mn>1111111</mn><mo>…</mo><mo>…</mo><mn>11112</mn><mtext>。</mtext></mrow><annotation encoding="application/x-tex">对当前区间求前缀积，假设某个前缀积p，当前的情况最坏可能是p1111111……11112。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">当</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">求</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">缀</span><span class="mord cjk_fallback">积</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">假</span><span class="mord cjk_fallback">设</span><span class="mord cjk_fallback">某</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">缀</span><span class="mord cjk_fallback">积</span><span class="mord mathdefault">p</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">当</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">情</span><span class="mord cjk_fallback">况</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">坏</span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">是</span><span class="mord mathdefault">p</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">1</span><span class="mord">2</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>如果取整个区间为最优解，则</mtext><mn>2</mn><mo>∗</mo><mi>p</mi><mo>&gt;</mo><mi>p</mi><mo>+</mo><mn>2</mn><mo>+</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo>→</mo><mi>p</mi><mo>&gt;</mo><mi>n</mi><mtext>，则</mtext><mn>2</mn><mo>∗</mo><mi>p</mi><mo>&gt;</mo><mn>2</mn><mo>∗</mo><mi>n</mi><mo separator="true">,</mo><mtext>可能当前前缀积已经到了最后，即最坏情况是</mtext><mi>p</mi><mo>&gt;</mo><mn>2</mn><mo>∗</mo><mi>n</mi><mtext>。</mtext></mrow><annotation encoding="application/x-tex">如果取整个区间为最优解，则2*p&gt;p+2+n-2→p&gt;n，则2*p&gt;2*n,可能当前前缀积已经到了最后，即最坏情况是p&gt;2*n。</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">如</span><span class="mord cjk_fallback">果</span><span class="mord cjk_fallback">取</span><span class="mord cjk_fallback">整</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">区</span><span class="mord cjk_fallback">间</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">优</span><span class="mord cjk_fallback">解</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7777700000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">则</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">可</span><span class="mord cjk_fallback">能</span><span class="mord cjk_fallback">当</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">前</span><span class="mord cjk_fallback">缀</span><span class="mord cjk_fallback">积</span><span class="mord cjk_fallback">已</span><span class="mord cjk_fallback">经</span><span class="mord cjk_fallback">到</span><span class="mord cjk_fallback">了</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">后</span><span class="mord cjk_fallback">，</span><span class="mord cjk_fallback">即</span><span class="mord cjk_fallback">最</span><span class="mord cjk_fallback">坏</span><span class="mord cjk_fallback">情</span><span class="mord cjk_fallback">况</span><span class="mord cjk_fallback">是</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">。</span></span></span></span></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://umbrellasoldier.github.io/2023/11/23/Codeforces-Round-895-Div-3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2024/02/03/2024%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A51/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            2024牛客寒假算法基础集训营1
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2023/11/16/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">高级数据结构</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+    
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2023-2024
+        <i class="ri-heart-fill heart_icon"></i> Shiki
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>Visitors:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>Views:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://pic.imgdb.cn/item/6555be1fc458853aef297314.webp" alt="一人ぼっち"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">图片</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i></p>
+  <div class="reward-box">
+    
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/MathJax.js"></script>
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/config/TeX-AMS-MML_HTMLorMML-full.js"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+ 
+    
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.15.1/katex.min.css">
+        <script src="https://cdn.staticfile.org/KaTeX/0.15.1/katex.min.js"></script>
+        <script src="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/auto-render.min.js"></script>
+        
+            <script src="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/copy-tex.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.15.1/contrib/copy-tex.min.css">
+        
+    
+ 
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=2083872221&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
