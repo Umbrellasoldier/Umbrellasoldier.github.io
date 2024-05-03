@@ -6,7 +6,7 @@
   <link href="https://umbrellasoldier.github.io/atom.xml" rel="self"/>
   
   <link href="https://umbrellasoldier.github.io/"/>
-  <updated>2024-05-03T13:50:15.481Z</updated>
+  <updated>2024-05-03T14:14:51.553Z</updated>
   <id>https://umbrellasoldier.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://umbrellasoldier.github.io/2024/05/03/CF-Div3/"/>
     <id>https://umbrellasoldier.github.io/2024/05/03/CF-Div3/</id>
     <published>2024-05-03T12:12:59.000Z</published>
-    <updated>2024-05-03T13:50:15.481Z</updated>
+    <updated>2024-05-03T14:14:51.553Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;codeforces-round-943-div-3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#codeforces-round-943-div-3&quot;&gt;¶&lt;/a&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;codeforces-round-895-div-3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#codeforces-round-895-div-3&quot;&gt;¶&lt;/a&gt;&lt;a</summary>
         
       
     
@@ -178,30 +178,6 @@
     
     
     <category term="Nowcoder" scheme="https://umbrellasoldier.github.io/categories/Nowcoder/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Codeforces Round 895 (Div. 3)</title>
-    <link href="https://umbrellasoldier.github.io/2023/11/23/Codeforces-Round-895-Div-3/"/>
-    <id>https://umbrellasoldier.github.io/2023/11/23/Codeforces-Round-895-Div-3/</id>
-    <published>2023-11-23T13:34:59.000Z</published>
-    <updated>2024-04-30T17:23:05.326Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://codeforces.com/contest/1872&quot;&gt;Codeforces Round 895 (Div. 3)&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;a-two-vessels&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Codeforces" scheme="https://umbrellasoldier.github.io/categories/Codeforces/"/>
     
     
   </entry>
@@ -494,6 +470,27 @@ y总写leetcode题是爽题，我写是送命题，%%%……&lt;/p&gt;
     
     
     <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/15/hello-world/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/15/hello-world/</id>
+    <published>2023-11-14T16:00:25.983Z</published>
+    <updated>2023-11-15T14:44:53.824Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
     
     
   </entry>
