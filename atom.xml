@@ -44,7 +44,7 @@
     <link href="https://umbrellasoldier.github.io/2024/04/15/Nowcoder-String-Class-Problems/"/>
     <id>https://umbrellasoldier.github.io/2024/04/15/Nowcoder-String-Class-Problems/</id>
     <published>2024-04-15T10:01:19.000Z</published>
-    <updated>2024-05-06T08:37:10.612Z</updated>
+    <updated>2024-05-06T14:09:41.370Z</updated>
     
     
       
@@ -52,7 +52,8 @@
         
         
     <summary type="html">&lt;h2 id=&quot;基础概念&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#基础概念&quot;&gt;¶&lt;/a&gt;基础概念&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+&lt;p&gt;$S[i]$：表示字符串 $S$ 第 $i$ 个位置的字母，下标从 $1$ 开始。&lt;br&gt;
+$PrefixS[i]$：表示字符串 $S$</summary>
         
       
     
