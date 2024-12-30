@@ -6,7 +6,7 @@
   <link href="https://umbrellasoldier.github.io/atom.xml" rel="self"/>
   
   <link href="https://umbrellasoldier.github.io/"/>
-  <updated>2024-05-06T12:20:03.880Z</updated>
+  <updated>2024-12-30T15:02:05.487Z</updated>
   <id>https://umbrellasoldier.github.io/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高等代数</title>
+    <link href="https://umbrellasoldier.github.io/2024/12/30/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
+    <id>https://umbrellasoldier.github.io/2024/12/30/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</id>
+    <published>2024-12-30T13:15:29.000Z</published>
+    <updated>2024-12-30T15:02:05.487Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第一章-行列式&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#第一章-行列式&quot;&gt;¶&lt;/a&gt;第一章 行列式&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-二阶行列式&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder-Games-Class-Problems</title>
+    <link href="https://umbrellasoldier.github.io/2024/05/24/Nowcoder-Games-Class-Problems/"/>
+    <id>https://umbrellasoldier.github.io/2024/05/24/Nowcoder-Games-Class-Problems/</id>
+    <published>2024-05-24T04:17:51.000Z</published>
+    <updated>2024-05-24T04:24:56.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;bash-game&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#bash-game&quot;&gt;¶&lt;/a&gt;Bash Game&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder-Graph-Class-Problems</title>
+    <link href="https://umbrellasoldier.github.io/2024/05/11/Nowcoder-Graph-Class-Problems/"/>
+    <id>https://umbrellasoldier.github.io/2024/05/11/Nowcoder-Graph-Class-Problems/</id>
+    <published>2024-05-10T23:15:11.000Z</published>
+    <updated>2024-05-11T08:05:09.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;连通性&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#连通性&quot;&gt;¶&lt;/a&gt;连通性&lt;/h2&gt;
+&lt;h3 id=&quot;无向图割-桥-双连通分量&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CF-Div3</title>
@@ -140,7 +206,7 @@
     <link href="https://umbrellasoldier.github.io/2024/02/09/ABC/"/>
     <id>https://umbrellasoldier.github.io/2024/02/09/ABC/</id>
     <published>2024-02-09T07:50:28.000Z</published>
-    <updated>2024-04-30T17:19:35.135Z</updated>
+    <updated>2024-06-07T17:54:36.193Z</updated>
     
     
       
@@ -420,77 +486,6 @@ y总写leetcode题是爽题，我写是送命题，%%%……&lt;/p&gt;
     
     
     <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树基础知识</title>
-    <link href="https://umbrellasoldier.github.io/2023/11/16/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>https://umbrellasoldier.github.io/2023/11/16/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2023-11-16T10:56:32.000Z</published>
-    <updated>2023-11-23T11:27:20.302Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-二叉树的性质&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#1-二叉树的性质&quot;&gt;¶&lt;/a&gt;&lt;strong&gt;1.二叉树的性质&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;性质：&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>算法日记（基础数据结构篇）</title>
-    <link href="https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87%EF%BC%89/"/>
-    <id>https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%AF%87%EF%BC%89/</id>
-    <published>2023-11-16T04:51:12.000Z</published>
-    <updated>2023-11-23T11:27:41.877Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;em&gt;2022.12.31&lt;/em&gt;&lt;br&gt;
-&lt;em&gt;2033.1.1&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;单链表：&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#单链表：&quot;&gt;¶&lt;/a&gt;&lt;strong&gt;单链表：&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://umbrellasoldier.github.io/2023/11/15/hello-world/"/>
-    <id>https://umbrellasoldier.github.io/2023/11/15/hello-world/</id>
-    <published>2023-11-14T16:00:25.983Z</published>
-    <updated>2023-11-15T14:44:53.824Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
     
     
   </entry>
