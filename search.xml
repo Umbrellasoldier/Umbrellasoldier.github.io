@@ -1969,7 +1969,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title>CF_Edu</title>
     <url>/2025/09/12/CF-Edu/</url>
     <content><![CDATA[<h2 id="edu181-d-segments-covering"><a class="header-anchor" href="#edu181-d-segments-covering">¶</a>Edu181-D. Segments Covering</h2>
 <p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>p</mi><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">dp[i]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">p</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span></span></span></span>: 前<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 段被精准覆盖一次的概率<br>
