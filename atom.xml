@@ -6,7 +6,7 @@
   <link href="https://umbrellasoldier.github.io/atom.xml" rel="self"/>
   
   <link href="https://umbrellasoldier.github.io/"/>
-  <updated>2025-09-15T12:48:36.529Z</updated>
+  <updated>2026-01-09T14:56:37.032Z</updated>
   <id>https://umbrellasoldier.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法竞赛进阶指南</title>
+    <link href="https://umbrellasoldier.github.io/2026/01/09/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/"/>
+    <id>https://umbrellasoldier.github.io/2026/01/09/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</id>
+    <published>2026-01-09T14:42:38.000Z</published>
+    <updated>2026-01-09T14:56:37.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;0x00 基本算法&lt;/h1&gt;
+&lt;h2 id=&quot;0x01-位运算&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#0x01-位运算&quot;&gt;¶&lt;/a&gt;0x01 位运算&lt;/h2&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CF_Edu</title>
@@ -454,30 +477,6 @@ y总写leetcode题是爽题，我写是送命题，%%%……&lt;/p&gt;
         
     <summary type="html">&lt;h4 id=&quot;快读小板子&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#快读小板子&quot;&gt;¶&lt;/a&gt;快读小板子&lt;/h4&gt;
 &lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-        
-      
-    
-    
-    
-    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>堆基础知识</title>
-    <link href="https://umbrellasoldier.github.io/2023/11/16/%E5%A0%86%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>https://umbrellasoldier.github.io/2023/11/16/%E5%A0%86%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2023-11-16T10:57:50.000Z</published>
-    <updated>2023-11-23T11:27:15.429Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;堆是一种树形结构，树的根是堆顶，堆顶始终保持为所有元素的最优值。有最大堆和最小堆，最大堆的根节点是最大值，最小堆的根节点是最小值。堆一般用&lt;strong&gt;二叉树&lt;/strong&gt;实现，成为二叉堆。&lt;br&gt;
-二叉堆的典型应用有&lt;strong&gt;堆排序和优先队列&lt;/strong&gt;</summary>
         
       
     
