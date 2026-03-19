@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一人ぼっち</title>
+  
+  <subtitle>Too Weak~</subtitle>
+  <link href="https://umbrellasoldier.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://umbrellasoldier.github.io/"/>
+  <updated>2026-02-26T16:16:16.000Z</updated>
+  <id>https://umbrellasoldier.github.io/</id>
+  
+  <author>
+    <name>Shiki</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法竞赛进阶指南</title>
+    <link href="https://umbrellasoldier.github.io/2026/01/09/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/"/>
+    <id>https://umbrellasoldier.github.io/2026/01/09/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/</id>
+    <published>2026-01-09T14:42:38.000Z</published>
+    <updated>2026-02-26T16:16:16.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;0x00 基本算法&lt;/h1&gt;
+&lt;h2 id=&quot;0x01-位运算&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#0x01-位运算&quot;&gt;¶&lt;/a&gt;0x01 位运算&lt;/h2&gt;
+&lt;h3 id=&quot;a-b&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CF_Edu</title>
+    <link href="https://umbrellasoldier.github.io/2025/09/12/CF-Edu/"/>
+    <id>https://umbrellasoldier.github.io/2025/09/12/CF-Edu/</id>
+    <published>2025-09-12T15:03:40.000Z</published>
+    <updated>2025-09-15T12:48:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;edu181-d-segments-covering&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#edu181-d-segments-covering&quot;&gt;¶&lt;/a&gt;Edu181-D. Segments</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>高等代数</title>
+    <link href="https://umbrellasoldier.github.io/2024/12/30/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
+    <id>https://umbrellasoldier.github.io/2024/12/30/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/</id>
+    <published>2024-12-30T13:15:29.000Z</published>
+    <updated>2025-01-07T15:33:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第一章-行列式&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#第一章-行列式&quot;&gt;¶&lt;/a&gt;第一章 行列式&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-二阶行列式&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder-Games-Class-Problems</title>
+    <link href="https://umbrellasoldier.github.io/2024/05/24/Nowcoder-Games-Class-Problems/"/>
+    <id>https://umbrellasoldier.github.io/2024/05/24/Nowcoder-Games-Class-Problems/</id>
+    <published>2024-05-24T04:17:51.000Z</published>
+    <updated>2024-05-24T04:24:56.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;bash-game&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#bash-game&quot;&gt;¶&lt;/a&gt;Bash Game&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder-Graph-Class-Problems</title>
+    <link href="https://umbrellasoldier.github.io/2024/05/11/Nowcoder-Graph-Class-Problems/"/>
+    <id>https://umbrellasoldier.github.io/2024/05/11/Nowcoder-Graph-Class-Problems/</id>
+    <published>2024-05-10T23:15:11.000Z</published>
+    <updated>2024-05-11T08:05:08.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;连通性&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#连通性&quot;&gt;¶&lt;/a&gt;连通性&lt;/h2&gt;
+&lt;h3 id=&quot;无向图割-桥-双连通分量&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CF-Div3</title>
+    <link href="https://umbrellasoldier.github.io/2024/05/03/CF-Div3/"/>
+    <id>https://umbrellasoldier.github.io/2024/05/03/CF-Div3/</id>
+    <published>2024-05-03T12:12:59.000Z</published>
+    <updated>2024-05-06T12:20:02.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;codeforces-round-895-div-3&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#codeforces-round-895-div-3&quot;&gt;¶&lt;/a&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Codeforces" scheme="https://umbrellasoldier.github.io/categories/Codeforces/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nowcoder String Class Problems</title>
+    <link href="https://umbrellasoldier.github.io/2024/04/15/Nowcoder-String-Class-Problems/"/>
+    <id>https://umbrellasoldier.github.io/2024/04/15/Nowcoder-String-Class-Problems/</id>
+    <published>2024-04-15T10:01:19.000Z</published>
+    <updated>2024-05-06T15:00:24.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;基础概念&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#基础概念&quot;&gt;¶&lt;/a&gt;基础概念&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+        
+      
+    
+    
+    
+    <category term="Nowcoder" scheme="https://umbrellasoldier.github.io/categories/Nowcoder/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杂题</title>
+    <link href="https://umbrellasoldier.github.io/2024/04/03/%E6%9D%82%E9%A2%98/"/>
+    <id>https://umbrellasoldier.github.io/2024/04/03/%E6%9D%82%E9%A2%98/</id>
+    <published>2024-04-03T13:09:35.000Z</published>
+    <updated>2024-04-30T17:21:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.acwing.com/problem/content/4408/&quot;&gt;统计子矩阵&lt;/a&gt;&lt;br&gt;
+暴力&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+        
+      
+    
+    
+    
+    <category term="Others" scheme="https://umbrellasoldier.github.io/categories/Others/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Code With Jiangly(short)</title>
+    <link href="https://umbrellasoldier.github.io/2024/03/30/Code-with-Jiangly-short/"/>
+    <id>https://umbrellasoldier.github.io/2024/03/30/Code-with-Jiangly-short/</id>
+    <published>2024-03-29T16:12:22.000Z</published>
+    <updated>2024-04-30T17:20:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;green&lt;/h1&gt;
+&lt;h2 id=&quot;brute-force&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#brute-force&quot;&gt;¶&lt;/a&gt;brute force&lt;/h2&gt;
+&lt;h3 id=&quot;151-good-triples&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Others" scheme="https://umbrellasoldier.github.io/categories/Others/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ARC</title>
+    <link href="https://umbrellasoldier.github.io/2024/03/17/ARC/"/>
+    <id>https://umbrellasoldier.github.io/2024/03/17/ARC/</id>
+    <published>2024-03-17T08:07:38.000Z</published>
+    <updated>2024-04-30T17:19:44.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;arc172b-atcoder-language&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#arc172b-atcoder-language&quot;&gt;¶&lt;/a&gt;ARC172B - AtCoder</summary>
+        
+      
+    
+    
+    
+    <category term="Atcoder" scheme="https://umbrellasoldier.github.io/categories/Atcoder/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ABC</title>
+    <link href="https://umbrellasoldier.github.io/2024/02/09/ABC/"/>
+    <id>https://umbrellasoldier.github.io/2024/02/09/ABC/</id>
+    <published>2024-02-09T07:50:28.000Z</published>
+    <updated>2024-06-07T17:54:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;abc-042-d-iroha-and-a-grid&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#abc-042-d-iroha-and-a-grid&quot;&gt;¶&lt;/a&gt;ABC-042-D. Iroha and a Grid&lt;/h2&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="Atcoder" scheme="https://umbrellasoldier.github.io/categories/Atcoder/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2024牛客寒假算法基础集训营1</title>
+    <link href="https://umbrellasoldier.github.io/2024/02/03/2024%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A51/"/>
+    <id>https://umbrellasoldier.github.io/2024/02/03/2024%E7%89%9B%E5%AE%A2%E5%AF%92%E5%81%87%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%9B%86%E8%AE%AD%E8%90%A51/</id>
+    <published>2024-02-03T14:17:00.000Z</published>
+    <updated>2024-04-30T17:18:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi</summary>
+        
+      
+    
+    
+    
+    <category term="Nowcoder" scheme="https://umbrellasoldier.github.io/categories/Nowcoder/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>高级数据结构</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
+    <published>2023-11-16T11:02:17.000Z</published>
+    <updated>2024-04-30T18:27:54.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;树状数组&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#树状数组&quot;&gt;¶&lt;/a&gt;树状数组&lt;/h2&gt;
+&lt;h3 id=&quot;基本操作&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>正向推导出贪心推公式排序的结论</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E6%AD%A3%E5%90%91%E6%8E%A8%E5%AF%BC%E5%87%BA%E8%B4%AA%E5%BF%83%E6%8E%A8%E5%85%AC%E5%BC%8F%E6%8E%92%E5%BA%8F%E7%9A%84%E7%BB%93%E8%AE%BA/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E6%AD%A3%E5%90%91%E6%8E%A8%E5%AF%BC%E5%87%BA%E8%B4%AA%E5%BF%83%E6%8E%A8%E5%85%AC%E5%BC%8F%E6%8E%92%E5%BA%8F%E7%9A%84%E7%BB%93%E8%AE%BA/</id>
+    <published>2023-11-16T11:01:54.000Z</published>
+    <updated>2023-11-23T11:28:10.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;方法总结&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#方法总结&quot;&gt;¶&lt;/a&gt;方法总结&lt;/h3&gt;
+&lt;p&gt;(1)假设结论为按照规则&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图论</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E5%9B%BE%E8%AE%BA/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E5%9B%BE%E8%AE%BA/</id>
+    <published>2023-11-16T11:01:41.000Z</published>
+    <updated>2024-05-02T08:27:48.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;树与图的存储&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#树与图的存储&quot;&gt;¶&lt;/a&gt;树与图的存储&lt;/h2&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数学知识</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</id>
+    <published>2023-11-16T11:01:31.000Z</published>
+    <updated>2026-02-20T09:22:20.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;模运算&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#模运算&quot;&gt;¶&lt;/a&gt;&lt;strong&gt;模运算&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;python除法是向下取整，求余应该先求出商再得出余数。&lt;br&gt;
+python没有溢出问题。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法日记（搜索篇）</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E6%90%9C%E7%B4%A2%E7%AF%87%EF%BC%89/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E6%90%9C%E7%B4%A2%E7%AF%87%EF%BC%89/</id>
+    <published>2023-11-16T11:01:16.000Z</published>
+    <updated>2023-11-23T11:27:52.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;bfs和dfs基础&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>杂项整理</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E6%9D%82%E9%A1%B9%E6%95%B4%E7%90%86/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E6%9D%82%E9%A1%B9%E6%95%B4%E7%90%86/</id>
+    <published>2023-11-16T11:00:59.000Z</published>
+    <updated>2023-11-23T11:28:40.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;位运算&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#位运算&quot;&gt;¶&lt;/a&gt;位运算&lt;/h2&gt;
+&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法日记（基础算法篇）</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E7%AF%87%EF%BC%89/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/%E7%AE%97%E6%B3%95%E6%97%A5%E8%AE%B0%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E7%AF%87%EF%BC%89/</id>
+    <published>2023-11-16T11:00:41.000Z</published>
+    <updated>2023-11-23T11:27:46.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;em&gt;2023.1.9&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;2023.1.10&lt;/em&gt; 太痛苦了，一道题写了一天还不会写，艹……&lt;br&gt;
+y总写leetcode题是爽题，我写是送命题，%%%……&lt;/p&gt;
+&lt;h2 id=&quot;算法复杂度&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Python快读快写</title>
+    <link href="https://umbrellasoldier.github.io/2023/11/16/python%E5%BF%AB%E8%AF%BB%E5%BF%AB%E5%86%99/"/>
+    <id>https://umbrellasoldier.github.io/2023/11/16/python%E5%BF%AB%E8%AF%BB%E5%BF%AB%E5%86%99/</id>
+    <published>2023-11-16T10:59:58.000Z</published>
+    <updated>2023-11-23T11:26:56.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;快读小板子&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#快读小板子&quot;&gt;¶&lt;/a&gt;快读小板子&lt;/h4&gt;
+&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="Competitive Programming" scheme="https://umbrellasoldier.github.io/categories/Competitive-Programming/"/>
+    
+    
+  </entry>
+  
+</feed>
